@@ -12,6 +12,9 @@
 ## 🎯 Objetivo del Laboratorio
 El presente laboratorio tiene como finalidad diseñar, implementar y automatizar una suite completa de pruebas funcionales de extremo a extremo (E2E) sobre una plataforma de comercio electrónico real (Bruno Ferrini), emulando las funciones de un QA Engineer en su primer sprint real. Se cubren flujos críticos del sistema mediante técnicas avanzadas de localización de selectores (F12) y aserciones rigurosas con `expect()`.
 
+### 📸 Evidencia 01: Inicialización del Entorno Base
+![Inicializando Playwright](capturas/incializando.png)
+
 ---
 
 ## 💻 Entorno y Herramientas Utilizadas
@@ -41,15 +44,18 @@ LAB07-FIN/
 ## 📊 Parte 01: Cobertura de las 15 Pruebas E2E Implementadas
 Superando el mínimo de 10 pruebas requeridas por la guía, se automatizaron 15 escenarios críticos divididos en 5 categorías funcionales del e-commerce:
 
+### 📸 Evidencia 02: Definición de la Lógica y Estructura del Código del Test
+![Lógica de Código Automatizado](capturas/definiendoCod.png)
+
 ### 1. Módulo de Navegación Básica y Carga
 * **Test 1:** Validación de acceso y carga limpia de la categoría "Accesorios de Hombre".
-* **Test 2:** Validación de ruteo al catálogo segmentado de "Zapatillas".
+* **Test 2:** Validación de ruteo al catálogo de "Zapatillas".
 * **Test 3:** Simulación de apertura y cierre interactivo de la interfaz del minicart (Mi Carrito).
 
 ### 2. Módulo de Motor de Búsqueda
 * **Test 4:** Búsqueda reactiva mediante el término clave "Carteras" y verificación de URL indexada.
 
-### 3. Módulo de Gestión de Perfil y Cuenta (Acciones con Estado de Autenticación)
+### 3. Módulo de Gestión de Perfil y Cuenta
 * **Test 5:** Comprobación de navegación segura hacia el Dashboard privado de "Mi Cuenta".
 * **Test 6:** Formulario - Edición interactiva de campos de Perfil (Nombre, Apellido, DNI, Teléfono).
 * **Test 7:** Formulario - Inyección y selección de Ubicación Regional de Envío (Ayacucho, Huamanga).
@@ -66,14 +72,20 @@ Superando el mínimo de 10 pruebas requeridas por la guía, se automatizaron 15 
 ### 5. Módulo de Carrito de Compras
 * **Test 15:** Flujo completo de adición de un calzado al carrito mediante la acción "Añadir a la bolsa".
 
+### 📸 Evidencia 03: Pruebas Ejecutadas desde la Extensión de VS Code
+![Test Ejecutados en Extensión](capturas/PassExtension.png)
+
 ---
 
 ## 📋 Parte 02: Gestión y Entrega de Evidencias de QA
 Acorde a los estándares de un entorno profesional de QA, Playwright fue configurado para generar evidencias en múltiples capas según el destinatario del reporte:
 
-1. **Terminal (Desarrollador):** Salida en tiempo real que detalla el paso a paso del ciclo de vida del test, hilos de procesamiento (`Workers`) y tiempos de respuesta de los elementos web.
+1. **Terminal (Desarrollador):** Salida en tiempo real que detalla el paso a paso del ciclo de vida del test, hilos de procesamiento (`Workers`) y tiempos de respuesta.
 2. **Reporte HTML (Equipo/Stakeholders):** Interfaz visual interactiva que desglosa detalladamente cada gancho (`hook`) ejecutado, interacciones con el DOM y aserciones validadas.
-3. **Reporte JSON (Integración Continua):** Archivo estructurado plano generado de forma nativa como `reporte-entrega.json` en la raíz del proyecto. Este formato permite indexar los resultados analíticos directamente con herramientas de CI/CD o tableros de control de calidad automáticos.
+3. **Reporte JSON (Integración Continua):** Archivo estructurado plano generado de forma nativa como `reporte-entrega.json` en la raíz del proyecto para indexar con herramientas de CI/CD.
+
+### 📸 Evidencia 04: Reporte Interactivo Exitoso en Formato HTML
+![Reporte HTML Exitoso](capturas/PassReporte.png)
 
 ---
 
