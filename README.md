@@ -29,6 +29,7 @@ El presente laboratorio tiene como finalidad diseñar, implementar y automatizar
 ## 📂 Estructura del Proyecto y Niveles de Directorio
 La suite de pruebas se organizó de manera modularizada bajo la siguiente jerarquía de archivos:
 
+```text
 LAB07-FIN/
 ├── node_modules/                 # Dependencias y paquetes de Node.js
 ├── playwright-report/            # Reporte interactivo autogenerado en formato HTML
@@ -38,7 +39,7 @@ LAB07-FIN/
 ├── package.json                  # Manifiesto y scripts de ejecución del proyecto
 ├── playwright.config.ts          # Configuración centralizada de Playwright (Headless: false)
 └── reporte-entrega.json          # Reporte autogenerado en formato JSON (Evidencia de QA)
-
+```
 ---
 
 ## 📊 Parte 01: Cobertura de las 15 Pruebas E2E Implementadas
