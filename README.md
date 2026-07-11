@@ -1,7 +1,7 @@
 # Laboratorio 07: Automatización de Pruebas Funcionales Web (E2E) con Playwright
 
 ## 👤 Información del Estudiante
-* **Nombre:** Elias Manu (Manuel)
+* **Nombre:** Ore Huasaja Manuel ELias/ Atao Huaman Yordi
 * **Asignatura:** IS-489 Pruebas y Aseguramiento de Calidad de Software
 * **Docente:** Ing. Lizbeth Jaico Quispe
 * **Semestre:** 2026-1
