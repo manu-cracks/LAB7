@@ -95,6 +95,6 @@ Acorde a los estándares de un entorno profesional de QA, Playwright fue configu
 1. **Instalar dependencias del proyecto:**
    ```bash
    npm install
-
+   ```
 
    [![CI Tests E2E Playwright](https://github.com/manu-cracks/LAB7/actions/workflows/ci-playwright.yml/badge.svg)](https://github.com/manu-cracks/LAB7/actions/workflows/ci-playwright.yml)
