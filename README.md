@@ -8,7 +8,7 @@
 * **Institución:** UNSCH - Escuela Profesional de Ingeniería de Sistemas
 
 ---
-
+   [![CI Tests E2E Playwright](https://github.com/manu-cracks/LAB7/actions/workflows/ci-playwright.yml/badge.svg)](https://github.com/manu-cracks/LAB7/actions/workflows/ci-playwright.yml)
 ## 🎯 Objetivo del Laboratorio
 El presente laboratorio tiene como finalidad diseñar, implementar y automatizar una suite completa de pruebas funcionales de extremo a extremo (E2E) sobre una plataforma de comercio electrónico real (Bruno Ferrini), emulando las funciones de un QA Engineer en su primer sprint real. Se cubren flujos críticos del sistema mediante técnicas avanzadas de localización de selectores (F12) y aserciones rigurosas con. `expect()`.
 
@@ -97,4 +97,3 @@ Acorde a los estándares de un entorno profesional de QA, Playwright fue configu
    npm install
    ```
 
-   [![CI Tests E2E Playwright](https://github.com/manu-cracks/LAB7/actions/workflows/ci-playwright.yml/badge.svg)](https://github.com/manu-cracks/LAB7/actions/workflows/ci-playwright.yml)
