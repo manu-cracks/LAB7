@@ -1,0 +1,42 @@
+# .github/workflows/ci-playwright.yml
+name: CI Tests E2E Playwright
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-e2e:
+    name: Ejecutar suite Playwright
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v5
+
+      - name: Instalar Node.js 24
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: 'npm'
+
+       Tarjeta de preparación: Instalar dependencias del proyecto
+      - name: Instalar dependencias
+        run: npm install
+
+      # Instalar los navegadores necesarios (Chromium) en el servidor de GitHub
+      - name: Instalar navegadores Playwright
+        run: npx playwright install --with-deps chromium
+
+      # Ejecutar las pruebas funcionales web en modo headless automáticamente
+      - name: Ejecutar tests E2E
+        run: npx playwright test
+
+      # Subir el reporte HTML generado como artefacto descargable
+      - name: Subir reporte Playwright
+        uses: actions/upload-artifact@v4
+        if: always() # Se sube el reporte incluso si alguna prueba falla
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
